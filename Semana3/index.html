@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+
+    <style type="text/css">
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body,html{
+            width: 100%;
+            height: 100%;
+        }
+
+        html{
+            font-size: 10px;
+        }
+
+        .conteiner{
+            width: 100%;
+            height: 100%;
+            background-color: #04813A;
+            flex-wrap: wrap-reverse;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            
+        }
+
+        .item{
+            margin: 1rem;
+            width: 30rem;
+            height: 10rem;
+            background-color: #32D177;    
+            text-align: center;
+            align-content: center;
+            font-size: 3rem;
+            color: black;
+            font-weight: bold;
+        }
+
+        #item1:hover, #item2:hover, #item3:hover{
+            font-size: 4rem;
+            font-weight: bolder;
+            color: white;
+            background-color: #64EA9E;
+            box-shadow: 0px 0px 15px 1px black;
+            transform: scale(1.2,1.1);
+            transition: all 0.5s ease;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item" id="item1">1</div>
+        <div class="item" id="item2">2</div>
+        <div class="item" id="item3">3</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html, body{
+    background-color: bisque;
+    position: relative;
+    height: 100%;
+}
+
+section{
+    background-color: white;
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    transform: translate(50%, -50%);
+    width: 60%;
+    border-radius: 20px;
+}
+
+.title{
+    background-color: aqua;
+    display: inline-block;
+    text-align:center;
+    width: 100%;
+    padding: 15px 0px;
+    border-radius: 20px ;
+}
+h2{
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0px;
+}
+
+input{
+    display: block;
+    margin: 10px;
+    
+}
+select{
+    display: block;
+    margin: 10px;
+}
+
+aside{
+    margin: 10px;
+}
+
+input[type= "text"]{
+    background-color: aqua;
+}
+
+
+textarea{display: block;
+    background-color: aqua;
+    outline: 2px solid red;
+    width: 200px;
+    height: 200px;
+    resize: none;
+}

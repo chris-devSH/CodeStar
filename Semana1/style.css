@@ -1,0 +1,96 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    background-image: linear-gradient(to top left, rgb(104, 6, 6), rgb(4, 4, 80));
+    background-attachment: fixed; /* importante para manter fixo na rolagem */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+img {
+    border-radius:  50%;
+    border-style: dotted;
+    border-color: black;
+    background-color: violet;
+    margin-bottom: 10px;
+}
+
+button{
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+    box-shadow: none;
+    background-image: linear-gradient(to right, rgba(0, 0, 255, 0.629), rgba(255, 0, 0, 0.629), rgba(255, 255, 0, 0.629), rgba(0, 128, 0, 0.629));
+    
+}
+
+button:hover{
+    width: 120px;
+    color: white;
+    font-weight: bolder;
+    background-image: linear-gradient(to right, red, yellow, green, blue);
+    transition: all 0.5s ease ;
+}
+
+section{
+    width: 500px;
+    height: 650px;
+    margin: auto;
+    background-color: white;
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 20px;
+    
+    
+}
+
+div{
+    margin-top: 10px;
+    padding: 20px;
+    
+}
+
+ul, ol,h2 {
+    margin-bottom: 2%;
+    display: block;
+    
+}
+#listas{
+    text-align: start;
+}
+
+
+li{
+    margin-left: 10px;
+    
+}
+
+table{
+    margin: auto;
+    border: 3px solid black;
+    width: 80%;
+
+}
+tr,td{
+    border: 2px solid black;
+    width: 40px;
+}
+
+thead{
+    background-color: aqua;
+    font-weight: bold;
+}
+tbody{
+    background-color: bisque;
+}
+tfoot{
+    background-color: lightpink;
+}

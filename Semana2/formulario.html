@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com formularios</title>
+    <link rel="stylesheet" href="styleform.css">
+</head>
+<body>
+    
+    <section>
+        
+        <aside>
+            <form action="page.html" method="get" enctype="multipart/form-data">
+                <input type="hidden" name="country" value="BR" >
+                <div>
+                    <h2>Inputs</h2>
+                        <label for=""><input type="submit" value="Enviar"></label>
+                        <label for=""><input type="text" value="Code Start"></label>
+                        <label for=""><input type="datetime-local"></label>
+                        <label for=""><input type="month"></label>
+                        <label for=""><input type="number"></label>
+                        <label for=""><input type="datetime"></label>
+                        <label for=""><input type="range"></label>
+                        <label for=""><input type="range"></label>
+                        <input type="search" placeholder="pesquise aqui">
+                        <input type="time">
+                        <input type="url" placeholder="url">
+                        <input type="color" name="" id="">
+
+            </form>
+        </aside> 
+
+        <aside>
+            <h2> Select > Option </h2>
+
+                    <select name="fruta">
+                        <option value="Maçã">Maçã</option>
+                        <option value="Banana">Banana</option>
+                        <option value="Abacaxi">Abacaxi</option>
+                        <option value="Laranja">Laranja</option>
+                    </select>
+
+                    <select name="fruta" size="4">
+                        <option value="Maçã">Maçã</option>
+                        <option value="Banana">Banana</option>
+                        <option value="Abacaxi">Abacaxi</option>
+                        <option value="Laranja">Laranja</option>
+                    </select>
+                    
+                    <select name="fruta" multiple>
+                        <option value="Maçã">Maçã</option>
+                        <option value="Banana">Banana</option>
+                        <option value="Abacaxi">Abacaxi</option>
+                        <option value="Laranja">Laranja</option>
+                    </select>
+
+                    <select name="fruta" disabled>
+                        <option value="Maçã">Maçã</option>
+                        <option value="Banana">Banana</option>
+                        <option value="Abacaxi">Abacaxi</option>
+                        <option value="Laranja">Laranja</option>
+                    </select>
+
+                    <select name="fruta" >
+
+                        <optgroup label="Frutas Vermelhas">
+                            <option value="morango">Morango</option>
+                            <option value="Cereja">Cereja</option>
+                            <option value="Amora">Amora</option>
+                            <option value="Ameixa">Ameixa</option>
+                        </optgroup>
+
+                        <optgroup label="Frutas Cítricas">
+                            <option value="Laranja">Laranja</option>
+                            <option value="Limão">Limão</option>
+                            <option value="Abacaxí">Abacaxí</option>                            
+                        </optgroup>
+                        
+                    </select>
+
+        </aside>
+        <aside>
+
+            <fieldset>
+                <legend>Label, fieldset, legend</legend>
+                <h2>Label - adionar junto ao imput</h2>
+                <label for="comida"> Qual sua comida preferida? (input dentro do label)<input type="text" name="comida" placeholder="digite aqui"></label>
+                
+                <input type="checkbox" name="comida" id="comida1">
+                <label for="comida1s">Li e aceito os teus direitos  (link fora do label)</label>
+            </fieldset>
+    </aside>
+
+        <label for="texto2">Digite aqui seu texto<textarea name="texto2" id="texto" placeholder="digite aqui" maxlength="2"></textarea></label>
+        
+        <label for="imagem"><input type="file" name="imagem2" accept="application/pdf"></label>
+    </section>
+    
+</body>
+</html>
